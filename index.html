@@ -53,7 +53,10 @@
                 </ul>
             </div>
             <div class="navbar-center">
-
+                <div class="flex gap-4 items-center">
+                    <img src="images/logo.png" alt="">
+                    <h1 class="font-extrabold text-4xl">Fruit Burst</h1>
+                </div>
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -63,17 +66,20 @@
                         </svg>
                     </label>
                     <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        class="menu menu-sm dropdown-content right-0 mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black">
                         <li><a>Home</a></li>
                         <li><a>About Us</a></li>
                         <li><a>Shop</a></li>
                         <li><a>All Fruits</a></li>
+                        <div tabindex="0" class="relative flex items-center">
+                            <input type="text" placeholder="Type here"
+                                class="input input-bordered w-full max-w-lg rounded-full text-[#121212] text-base" />
+                            <i class="fa-solid fa-magnifying-glass text-black absolute right-5"></i>
+                        </div>
                     </ul>
+
                 </div>
-                <div class="flex gap-4 items-center">
-                    <img src="images/logo.png" alt="">
-                    <h1 class="font-extrabold text-4xl">Fruit Burst</h1>
-                </div>
+
 
             </div>
 
@@ -180,7 +186,50 @@
             </div>
 
         </section>
+        <!-- Deal of the day section  -->
+        <section>
+            <div>
+                <div>
+                    <div>
+                        <h2>Deal of the day</h2>
+                        <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+                            Latin literature from 45 BC, making it over 2000 years old.</p>
+                    </div>
+                    <div>
+                        <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                            <div class="flex flex-col">
+                                <span class="flex items-center gap-5">
+                                    <span class="text-5xl">15</span>
+                                    <span><i class="fa-solid fa-ellipsis-vertical text-3xl"></i></span>
+                                </span>
+                                <p class="text-left">days</p>
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="countdown font-mono text-5xl">
+                                    <span style="--value:10;"></span>
+                                </span>
+                                hours
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="countdown font-mono text-5xl">
+                                    <span style="--value:24;"></span>
+                                </span>
+                                min
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="countdown font-mono text-5xl">
+                                    <span style="--value:27;"></span>
+                                </span>
+                                sec
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
 
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
